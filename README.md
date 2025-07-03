@@ -9,6 +9,12 @@ Node ROS 2 (Python) pour capteur ultrason **HC-SR04** sur Raspberry Pi 5, utilis
 - ROS 2 (Humble / Iron / Jazzy)
 - Python 3.10+
 - `gpiozero`
+
+```bash
+sudo apt install python3-gpiozero python3-rpi.gpio python3-pigpio
+pip install gpiozero --break-system-packages
+```
+
 - `sensor_msgs`
 
 ---

@@ -8,8 +8,8 @@ class UltrasonicNode(Node):
     def __init__(self):
         super().__init__('ultrasonic_node')
 
-        # Capteur GPIO : TRIG = GPIO23, ECHO = GPIO24
-        self.sensor = DistanceSensor(echo=24, trigger=23, max_distance=4.0)
+        # Capteur GPIO : TRIG = GPIO15, ECHO = GPIO18
+        self.sensor = DistanceSensor(echo=18, trigger=15, max_distance=4.0)
 
         self.publisher_ = self.create_publisher(Range, 'ultrasonic_range', 10)
         self.timer = self.create_timer(0.2, self.publish_distance)  # 5 Hz
